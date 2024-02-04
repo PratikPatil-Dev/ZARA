@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/744ebb3139.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <title>ZARA</title>
+</head>
+
+<body class="overflow-hidden h-screen">
+  <section id="carousel-section" class="w-full h-full z-40">
+    <!-- Navbar -->
+    <nav
+      class="text-white-100 fixed top-0 z-40 flex flex-wrap justify-between items-center w-full py-6 md:py-0 px-0 text-lg bg-transparent">
+      <div class="absolute top-0 md:static w-full md:flex md:items-center md:w-auto">
+        <ul class="text-base text-white pt-4 md:flex md:justify-between md:pt-0 space-x-4">
+          <li class="md:p-4 text-slate-800 font-bold cursor-pointer">
+            <button id="menuButton" aria-label="Menu" class="p-2 relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div id="menu" class="hidden w-full md:flex md:items-center  md:w-auto">
+        <div class="flex items-center mr-20 mt-5 bg-white border border-black relative w-96 p-2">
+          <input class="flex h-full w-full bg-white text-xs file:border-0 file:bg-transparent file:text-sm "
+            type="text" />
+          <button
+            class="absolute right-0 items-center justify-center whitespace-nowrap rounded-md text-xs tracking-wide font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-none focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+            SEARCH
+          </button>
+        </div>
+        <div class="flex items-center space-x-6 mx-2">
+          <a class="text-xs" href="#">
+            LOG IN
+          </a>
+          <a class="text-xs" href="#">
+            HELP
+          </a>
+          <a class="text-xs " href="#">
+            SHOPPING BAG (0)
+          </a>
+        </div>
+      </div>
+      <a class="text-xs md:hidden absolute top-5 right-8 cart" href="#">
+        SHOPPING BAG (0)
+      </a>
+      <div id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block absolute top-0 left-0 px-8 pt-4">
+        <span class="material-symbols-outlined text-2xl md:text-lg">menu</span>
+      </div>
+    </nav>
+    <div class="absolute top-6 left-20 md:left-48 w-40 md:w-64 z-40">
+      <a href="https://www.zara.com/in/" title="ZARA India, Go to the Zara homepage" itemprop="url"
+        data-qa-action="logo-click" tabindex="0">
+        <svg aria-label="ZARA India logo. Go to the home page" viewBox="0 0 132 55" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M105.673.035l19.557 53.338 6.77.002v.383h-21.548v-.383h6.344l-6.431-17.54H97.311v.007l.07.204c.521 1.548.78 3.17.764 4.803v6.575c0 3.382 1.494 6.81 4.347 6.81 1.675 0 3.012-.59 4.604-2.046l.227.211C105.594 54.224 103.5 55 100.36 55c-2.37 0-4.398-.57-6.03-1.693l-.309-.222c-2.148-1.624-3.542-4.278-4.142-7.89l-.096-.583-.1-.882-.01-.152-3.599 9.792h5.107v.384H80.496v-.384h5.162l3.951-10.753v-.023a34.924 34.924 0 0 1-.075-1.906v-4.693c0-5.77-4.29-9.08-11.771-9.08H70.41v26.458h6.371v.383h-24.9v-.383h6.345l-6.431-17.54H33.948l-6.371 17.346.266-.044c8.366-1.442 12.213-7.827 12.265-14.55h.388v15.171H0L30.06 2.185H17.972C7.954 2.185 3.42 9.922 3.35 17.635h-.387V1.8h36.488l-.222.385L9.396 53.373h15.695c.39 0 .778-.019 1.169-.05.26-.018.522-.044.788-.077l.095-.01L46.703 0h.387l.013.035 15.369 41.916V2.185h-6.328v-.39h21.778c10.467 0 17.774 5.372 17.774 13.068 0 5.612-5.005 10.27-12.45 11.595l-1.367.174 1.377.14c4.515.517 8.1 1.906 10.641 4.127l.017.016L105.273 0h.386l.014.035zm-8.552 35.32l.038.094h13.061l-8.773-23.928-7.221 19.67.039.037.367.364a11.876 11.876 0 0 1 2.489 3.762z">
+          </path>
+        </svg>
+      </a>
+      <div class="hidden md:flex space-x-6 my-6">
+        <a class="text-sm" href="#">
+          WOMAN
+        </a>
+        <a class="text-sm" href="#">
+          MAN
+        </a>
+        <a class="text-sm" href="#">
+          KIDS
+        </a>
+        <a class="text-sm" href="#">
+          BEAUTY
+        </a>
+      </div>
+    </div>
+    <!-- Carousel  -->
+    <div class="sampleSlick h-auto h-full">
+      <!-- first image  -->
+      <div class="relative w-full h-full">
+        <div class="nestedSlick ">
+          <!-- Nested Carousel Slides -->
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-woman-new/subhome-xmedia-05-2//w/1920/IMAGE-landscape-fill-e540b6b2-96d3-4259-9ff4-b9ee8bb43e67-default_0.jpg?ts=1706781043594"
+              alt="zara image" />
+            <img class="w-screen h-screen mobile-image" src="./images/img1.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">NEW</span>
+          </div>
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-woman-collection/subhome-xmedia-05-3//w/1920/IMAGE-landscape-fill-f37174b2-ce33-4a2d-996d-18c96d9e821f-default_0.jpg?ts=1706781057148"
+              alt="zara image" />
+            <img class="md:w-full h-screen mobile-image" src="./images/img2.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">COLLECTION</span>
+          </div>
+        </div>
+      </div>
+      <!-- Second image  -->
+      <div class="relative w-full h-full ">
+        <div class="nestedSlick">
+          <!-- Nested Carousel Slides -->
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/aw23-sale/subhome-xmedia-launch-2-man//w/1920/IMAGE-landscape-aw23-sale-post-all-fill-6b169ea8-46d0-4914-9b7b-cec7047b1ccb-mk_MK@MK_0.jpg?ts=1706210268434"
+              alt="zara image" />
+            <img class="md:w-full h-screen mobile-image" src="./images/img3.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">NEW</span>
+            <div class=" absolute md:inset-y-0 md:start-[38%] inset-y-0  flex justify-center items-center flex-col text-center">
+              <h1 class="text-white text-9xl font-thin text-yellow-300 tracking-[2rem]">
+                SALE
+              </h1>
+              <h3 class="text-white md:text-4xl tracking-[.25rem] uppercase">
+                Online and Offline
+              </h3>
+            </div>
+          </div>
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-man-san-valentin/subhome-xmedia-05//w/1920/IMAGE-landscape-fill-03059806-c7e9-4761-9945-5a28fa29b800-default_0.jpg?ts=1706805978544"
+              alt="zara image" />
+            <img class="md:w-full h-screen mobile-image" src="./images/img4.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">VALENTINES'S
+              DAY</span>
+          </div>
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-man-new/subhome-xmedia-05//w/1920/IMAGE-landscape-fill-1e67577a-9545-4f4d-95a2-9f5eac58c6ba-default_0.jpg?ts=1706804339799"
+              alt="zara image" />
+            <img class="md:w-full h-screen mobile-image" src="./images/img5.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">COLLECTION</span>
+          </div>
+        </div>
+      </div>
+      <!-- third image  -->
+      <div class="relative w-full h-full">
+        <div class="nestedSlick">
+          <!-- Nested Carousel Slides -->
+          <div class="relative"><img class="w-full h-screen desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-kids-girl/subhome-xmedia-05//w/1920/IMAGE-landscape-default-fill-1e83cb0b-3fd9-4a90-9adc-2336f427b001-default_0.jpg?ts=1706782385336"
+              alt="zara image" />
+            <img class="w-full h-screen mobile-image" src="./images/img6.jpg" alt="zara image" />
+            <span class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">6-14 YEARS |
+              GIRLS</span>
+          </div>
+          <div class="relative"><img class="w-full h-screen  desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-kids-boy/subhome-xmedia-05//w/1920/IMAGE-landscape-default-fill-394a4a50-9fab-4a64-a1db-9d581eb05106-default_0.jpg?ts=1706781155362"
+              alt="zara image" />
+            <img class="w-full h-screen mobile-image" src="./images/img7.jpg" alt="zara image" /><span
+              class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">6-14 YEARS |
+              BOYS</span>
+          </div>
+          <div class="relative"><img class="w-full h-screen  desktop-image"
+              src="https://static.zara.net/photos///contents/mkt/spots/ss24-north-kids-babygirl/subhome-xmedia-05//w/1920/IMAGE-landscape-default-fill-d1ae86c8-f03c-49d7-8965-e3e83489fc5e-default_0.jpg?ts=1706783141955"
+              alt="zara image" />
+            <img class="w-full h-screen mobile-image" src="./images/img8.jpg" alt="zara image" /><span
+              class="absolute bottom-[30%] right-[5%] text-slate-600 text-xs z-50 cursor-pointer	">6-14 YEARS |
+              GIRLS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##############Script tags##########################  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
